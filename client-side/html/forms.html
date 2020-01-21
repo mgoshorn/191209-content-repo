@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Forms are a tool for collecting user input -->
+    <!-- A <form> tag is a structural tag which indicates what content
+        is a part of the form.  Within this, we will use <input> tags,
+        (and potentially other input related tags) to provide controls
+        for users to input data. The form can then be submitted as an 
+        HTTP request using either the GET or POST methods.
+    -->
+    
+    <!-- Sample Google Search Form -->
+    <form action="http://google.com/search" method="GET">
+        <input type="text" name="q">
+        <input type="submit">
+    </form>
+
+
+    <form action="http://google.com" method="GET">
+
+        <label for="first-name">First Name: </label>
+        <input id="first-name" type="text" placeholder="First Name" name="first-name">
+        <!-- first-name=Billy&last-name=Baggins -->
+
+        <input type="button"> 
+        <input type="email"> 
+        <input type="file"> 
+        <input type="image"> 
+        <input type="tel"> 
+        <input type="url"> 
+        <input type="time"> 
+        <input type="color"> 
+        <br>
+
+        <select name="user-selection">
+            <option value="abby">Abby</option>
+            <option value="billy">Billy</option>
+            <option value="cindy">Cindy</option>
+            <option value="danny">Danny</option>
+        </select>
+
+        <br>
+
+        <div>
+            <label for="radio-a">A</label>
+            <input id="radio-a" name="my-radio" type="radio" value="a">
+            <label for="radio-b">B</label>
+            <input id="radio-b" name="my-radio" type="radio" value="b">
+            <input name="my-radio" type="radio" value="c">
+            <input name="my-radio" type="radio" value="d">
+            <input name="my-radio" type="radio" value="e">
+        </div>
+
+        <div>
+            <input name="my-checkbox" type="checkbox">
+            <input name="my-checkbox" type="checkbox">
+            <input name="my-checkbox" type="checkbox">
+            <input name="my-checkbox" type="checkbox">
+            <input name="my-checkbox" type="checkbox">
+            <input name="my-checkbox" type="checkbox">
+        </div>
+
+    </form>
+</body>
+</html>
