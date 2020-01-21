@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    /* 
+        Color Units
+        -----------
+        literal
+        rgb - red green blue (0, 255) for each channel
+        rgba - same, but with 0-1 alpha channel for opacity
+        hsl - hue saturation lightness
+        hsla - same as rgba for hsl
+        hex code - #RRGGBB
+        hex base 16 number format (0-F)
+    */
+
+    background: black;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    width: 800px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+a {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* #apple {
+    font-size: 25px;
+} */
+
+#puppy-img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    /* Expressions related to size */
+    /* width/height */
+    /* max-height/max-width */
+    /* min-height/min-width */
+
+    /* Units related to size */
+    /* px - pixels */
+    /* % - percent of parent */
+    /* em - Width of letter M of parent tag*/
+    /* rem - Width of the root of the documents
+     M letter */
+    /* vh/vw - view height, view width
+    /* vmin/vmax - view max/min of height/width */
+}
