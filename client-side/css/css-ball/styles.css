@@ -1,0 +1,34 @@
+html, body, #container {
+    margin: 0;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ball {
+    height: 200px;
+    width: 200px;
+    background: #CCC;
+    border-radius: 100%;
+    box-shadow: 25px 25px 25px 0 grey, 
+        -50px -50px 50px 0 #777 inset;
+    transition: all 500ms linear;
+}
+
+#ball:hover {
+    box-shadow: -25px 25px 25px 0 grey, 
+    50px -50px 50px 0 #777 inset;
+}
+
+#ball:focus {
+    box-shadow: 25px -25px 25px 0 grey, 
+    -50px 50px 50px 0 #777 inset;
+}
+#ball:active  {
+    box-shadow: -25px -25px 25px 0 grey, 
+    50px 50px 50px 0 #777 inset;
+}
