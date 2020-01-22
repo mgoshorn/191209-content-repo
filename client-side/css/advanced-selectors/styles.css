@@ -1,0 +1,92 @@
+
+
+html, body {
+    height: 100%;
+}
+
+body *:not(button):not(input) {
+    height: 40%;
+    width: 40%;
+    margin: 5px;
+    /* width style color */
+    border: 1px solid black;
+}
+
+p {
+    height: 50px;
+}
+
+
+#paragraph-container {
+    height:  400px;
+}
+
+
+/**  
+    > - Child selector
+    ex. .a > .b - Selects any .b which is
+        directly contained within a .a
+
+      - (empty space) Descendant Selector
+    ex. .a .b - Selects any .b which is 
+    contained anywhere within a .a
+        Selects any descendant regardless of
+        depth
+    , - Union Selector
+    ex. .a, .b - Selects any .a and any .b
+    Selects the union of the selectors on both
+    sides
+
+    - Intersection Selector
+    ex. .a & .b - Any element which is both
+        .a and a .b 
+    Selects the intersection of the selectors on
+    both sides.
+
+    [] - Attribute selector
+    ex. button[disabled] - Selects any button
+        which has the attribute disabled applied
+        to it
+    Selects elements which have a matching 
+        property or property-value pair
+
+    + -  Next Sibling Selector
+    ex. .a + .b - Select a .b if it preceeded
+    by a .a
+    Selects the right side of expression if its
+    preceeding sibling is the left side.
+
+    ~ - Next siblings selector
+    ex. .a ~ .b - Selects any .b which is
+    preeceded by a .a anywhere in the current
+    immediate parent container.
+    
+*/ 
+div div {
+    background: red;
+}
+
+div > div {
+    background: green;
+}
+
+div aside, section {
+    background: #7700FF;
+}
+
+div#inner-div {
+    border-color: yellow;
+}
+
+button[disabled] {
+    color: green;
+}
+
+input[type="text"] {
+    background: black;
+    color: white;
+}
+
+#p3 ~ p {
+    background: red;
+}

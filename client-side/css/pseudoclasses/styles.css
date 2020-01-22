@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+}
+
+/* every other (odd, even also work) */
+div:nth-child(2n) {
+    background: brown;
+}
+
+/* Individual element by index */
+div:nth-child(10) {
+    background: grey;
+}
+
+div:first-child {
+    background: red;
+}
+
+div:last-child {
+    background: green;
+}
+
+/* Targets the 'before' area of any div which is not empty */
+div:not(:empty):before{
+    font-weight: bold;
+    content: "has data";
+}
+
+div{
+    text-align: center;
+}
