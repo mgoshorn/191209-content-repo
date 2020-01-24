@@ -20,7 +20,7 @@ def inference():
 
     for item in request.form:
         print(item)
-        
+
     # Load image from multipart upload and get bytes
     file = request.files["img"]
     content_type = file.content_type
@@ -38,4 +38,4 @@ def inference():
 
     return render_template("result.html", result=mapping, img_b64=b64_data)
 
-app.run(debug=True)
+# app.run(debug=True)
