@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+<!-- IMPORTANT: If you intend to extend
+another template, it should be the first line
+of the HTML file -->
+
+<!-- Simply reusing the existing definition 
+of the header in the parent template -->
+{% block header %}
+{{ super() }}
+{% endblock %}
+<!-- Use the existing block but augment it
+    with additional content. -->
+
+    {% block content %}
+    {{ super() }}
+    <p>Balloon animals are special balloons filled with air and shaped into the form of an animal.</p>
+{% endblock %}
